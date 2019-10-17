@@ -11,9 +11,9 @@
     <title>Currency Converter</title>
   </head>
   <body>
-  <form method="post" action="/conversion">
+  <form method="get" action="/conversion">
 <h3>RATE:</h3>
-  <input type="text" name="rate" value="22000">
+  <input type="text" name="rate" id="rate">
   <br>
 <h3>USD:</h3>
   <input type="text" name="USD" id="USD" value="1">

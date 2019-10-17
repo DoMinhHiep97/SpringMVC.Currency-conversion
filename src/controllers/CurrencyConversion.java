@@ -15,9 +15,9 @@ public class CurrencyConversion {
     }
 
     @GetMapping("/conversion")
-    public String conversion(@RequestParam String USD, Model model){
+    public String conversion(@RequestParam String rate, String USD, Model model){
 
-        double vnd=Double.parseDouble(USD)*22000;
+        double vnd=Double.parseDouble(USD)*Double.parseDouble(rate);
         model.addAttribute("vnd",vnd);
         return "index";
     }
